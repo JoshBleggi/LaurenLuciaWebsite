@@ -6,39 +6,26 @@
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-    </head>
-    <body>
-        <header>
-                <div style="float: left">@Html.ActionLink(" ", "Index", "Home", new {
-                                        style = "background: url('" + Url.Content("~/images/Lauren Images/Nav/BusinessCard back.jpg") + "') no-repeat center right; display:block; height:120px; width:200px;justify-content:center;"
-                                     })</p>
-                </div>
-                <div style="float:right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                                </section>
-                                <nav>
-                                    <ul id="menu">
-                                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                                                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                                                                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                                                                        </ul>
-                                                                    </nav>
-                                                                </div>
-        </header>
-        <div id="sidebar" style="width:200px;border-left-color:white;float:left;clear:both">
-            @RenderSection("sidebar", required: true)
-            </div>
-        <div id="body" style="float:right">
-            @RenderSection("featured", required: false)
-                <section class="content-wrapper main-content clear-fix">
-                    @RenderBody()
-                    </section>
-                </div>
-
-
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
+    </head>
+    <body>
+            <div id="sidebar" style="width:15%;border-left-color:white;float:left;clear:left">
+                <table>
+                    <tr>
+                        <td style="width:10px"/>                        
+                        <td>
+                            @Html.ActionLink(" ", "Index", "Home", new
+                                                    {
+                                                        style = "background: url('" + Url.Content("~/Content/Images/LaurenImages/Nav/White Logo Transparent.png") + "') no-repeat center right; display:block; height:120px; width:200px;justify-content:center;"
+                                                    })
+                        </td>
+                    </tr>
+                </table>
+                @RenderSection("sidebar", required: true)
+                </div>
+                <div style="width: 85%; float: right; ">
+                    @RenderSection("featured", required: false)
+                    </div>
     </body>
 </html>

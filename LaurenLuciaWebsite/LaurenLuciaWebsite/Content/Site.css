@@ -1,13 +1,12 @@
 ﻿html {
-    background-color: #010302;
+    background-color: #101010;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #010302;
-    border-top: solid 10px #000;
-    color: #010302;
+    background-color: #101010;
+    color: #101010;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
@@ -15,7 +14,7 @@ body {
 }
 
 a {
-    color: #010302;
+    color: #101010;
     outline: none;
     padding-left: 3px;
     padding-right: 3px;
@@ -34,7 +33,7 @@ a {
 header, footer, hgroup,
 nav, section {
     display: block;
-    background-color: #010302;
+    background-color: #101010;
 }
 
 mark {
@@ -61,7 +60,7 @@ mark {
 
 h1, h2, h3,
 h4, h5, h6 {
-    background-color: #010302;
+    background-color: #101010;
     color: #000;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -101,7 +100,7 @@ h5, h6 {
 }
 
 #body {
-    background-color: #010302;
+    background-color: #101010;
     padding-bottom: 35px;
 }
 
@@ -210,11 +209,11 @@ ul#menu {
 ----------------------------------------------------------*/
 /* featured */
 .featured {
-    background-color: #010302;
+    background-color: #101010;
 }
 
     .featured .content-wrapper {
-        background-color: #010302;
+        background-color: #101010;
         background-image: -ms-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         background-image: -o-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
@@ -589,6 +588,10 @@ tr.pager td {
     padding: 0 0.25em 0 0;
 }
 
+tr.sidebar {
+    height: 50px;
+}
+
 
 /********************
 *   Mobile Styles   *
@@ -666,12 +669,12 @@ tr.pager td {
     .content-wrapper {
         padding-right: 10px;
         padding-left: 10px;
-        background-color: #010302;
+        background-color: #101010;
     }
 
     .featured .content-wrapper {
         padding: 10px;
-        background-color: #010302;
+        background-color: #101010;
     }
 
     /* page content */

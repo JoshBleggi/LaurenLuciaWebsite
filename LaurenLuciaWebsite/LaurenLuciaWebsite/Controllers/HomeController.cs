@@ -32,7 +32,7 @@ namespace LaurenLuciaWebsite.Controllers
 
         public List<String> GetNavImagePaths()
         {
-            var content = "~\\Images\\Lauren Images\\Nav\\Unselected\\";
+            var content = "~\\Content\\Images\\LaurenImages\\Nav\\Unselected\\";
             var path = Server.MapPath(content);
             DirectoryInfo Folder;
             FileInfo[] Images;
