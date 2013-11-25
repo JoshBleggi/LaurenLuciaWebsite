@@ -4,115 +4,22 @@
 @{
         ViewBag.Title = "Home Page";
 }
-        @section sidebar{
+
 <script type="text/javascript">
     function EditorialMouseOver() {
         mar = document.getElementById('EditorialSubMargin');
         mar.hidden = false;
-        mar.style.visibility = "visible";
         el = document.getElementById('EditorialSub');
         el.hidden = false;
-        el.style.visibility = "visible";
     }
+
     function EditorialMouseOut() {
         mar = document.getElementsById('EditorialSubMargin');
         mar.hidden = true;
-        mar.style.visibility = "collapse";
         el = document.getElementsById('EditorialSub');
         el.hidden = true;
-        el.style.visibility = "collapse";
     }
-            </script>
-        <section class="sidebar">
-            <table >
-                <tr style="height: 25px; border-bottom: 1px solid #333333;">
-                    <td/><td/>
-                </tr>
-                <tr id="Editorial" style="position: relative; border-bottom: 1px solid #333333; height: 100px; width: 100%;" onmouseover="EditorialMouseOver()" onmouseout="EditorialMouseOut()">
-                    <td style="width: 5%; height:100%; border-bottom: 1px solid #333333; padding: 0; margin: 0;">
-                        <table>
-                            <tr style="height:70px;">
-                                <td />
-                            </tr>
-                            <tr class="EditorialSub" style="border-top: 1px solid #333333;" hidden>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td style=" height: 39px;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td style=" height: 38px;"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td style="width: 95%; height: 100%; width: 100%; padding:0; margin: 0;">
-                        <table style="position: relative; height: 100%; width: 100%; padding: 0; margin: 0;">
-                            <tr style="position: relative; height:70px; width: 100%;">
-                                <td style="position: relative; width: 100%;">
-                                    <a style="position: absolute; top: 25%; background: url('../../Content/Images/LaurenImages/Nav/Unselected/Editorial.png') no-repeat left; display: block; height: 32px; width: 200px;"></a>
-                                </td>
-                            </tr>
-                            <tr class="EditorialSub" style=" height: 100%; position: relative; border-top: 1px solid #333333;" hidden>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a style="height: 100%; position: relative; top: 25%; background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Autumn Winter 2014.png') no-repeat right; display: block; height: 32px; width: 200px;"></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a style="position: relative; top: 25%; background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Past Work.png') no-repeat right; display: block; height: 32px; width: 200px; "></a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                    <tr style="position: relative; height: 70px; border-bottom: 1px solid #333333;">
-                        <td style="width: 10px"/>
-                        <td style="position: relative; width: 100%;">
-                            <a style="position: absolute; top: 25%; background: url('../../Content/Images/LaurenImages/Nav/Unselected/Collections.png') no-repeat left; display: block; height: 32px; width: 200px;"></a>
-                        </td>
-                    </tr>
-                <tr style="position: relative; height: 70px; border-bottom: 1px solid #333333;">
-                    <td style="width: 10px" />
-                    <td style="position: relative; width: 100%;">
-                        <a style="position: absolute; top: 25%; background: url('../../Content/Images/LaurenImages/Nav/Unselected/Runway.png') no-repeat left; display: block; height: 32px; width: 200px;"></a>
-                    </td>
-                </tr>
-                <tr style="position: relative; height: 70px; border-bottom: 1px solid #333333;">
-                    <td style="width: 10px" />
-                    <td style="position: relative; width: 100%;">
-                        <a style="position: absolute; top: 25%; background: url('../../Content/Images/LaurenImages/Nav/Unselected/Cad.png') no-repeat left; display: block; height: 32px; width: 200px;"></a>
-                    </td>
-                </tr>
-                <tr style="position: relative; height: 70px; border-bottom: 1px solid #333333;">
-                    <td style="width: 10px" />
-                    <td style="position: relative; width: 100%;">
-                        <a style="position: absolute; top: 25%; background: url('../../Content/Images/LaurenImages/Nav/Unselected/News.png') no-repeat left; display: block; height: 32px; width: 200px;"></a>
-                    </td>
-                </tr>
-                <tr style="position: relative; height: 70px; border-bottom: 1px solid #333333;">
-                    <td style="width: 10px" />
-                    <td style="position: relative; width: 100%;">
-                        <a style="position: absolute; top: 25%; background: url('../../Content/Images/LaurenImages/Nav/Unselected/About.png') no-repeat left; display: block; height: 32px; width: 200px;"></a>
-                    </td>
-                </tr>
-                <tr style="position: relative; height: 70px; border-bottom: 1px solid #333333;">
-                    <td style="width: 10px" />
-                    <td style="position: relative; width: 100%;">
-                        <a style="position: absolute; top: 25%; background: url('../../Content/Images/LaurenImages/Nav/Unselected/Contact.png') no-repeat left; display: block; height: 32px; width: 200px;"></a>
-                    </td>
-                </tr>
-                </table>
-            </section>
-            }
+</script>
     @section featured {
         <section>
 

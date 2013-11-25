@@ -11,18 +11,16 @@
     </head>
     <body>
             <div id="sidebar" style="width:15%;border-left-color:white;float:left;clear:left">
-                <table>
-                    <tr>
-                        <td style="width:10px"/>                        
-                        <td>
-                            @Html.ActionLink(" ", "Index", "Home", new
-                                                    {
-                                                        style = "background: url('" + Url.Content("~/Content/Images/LaurenImages/Nav/White Logo Transparent.png") + "') no-repeat center right; display:block; height:120px; width:200px;justify-content:center;"
-                                                    })
-                        </td>
-                    </tr>
-                </table>
-                @RenderSection("sidebar", required: true)
+                <ul style="height:100%; width: 100%; padding:0px">
+                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/White Logo Transparent.png') no-repeat; display: block; height: 150px; margin-left:10%;"></a></li>
+                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Editorial.png') no-repeat; display: block; height: 38px; margin-left:10%;"></a></li>
+                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Collections.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
+                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Runway.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
+                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Cad.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
+                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/News.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
+                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/About.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
+                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Contact.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
+                </ul>
                 </div>
                 <div style="width: 85%; float: right; ">
                     @RenderSection("featured", required: false)
