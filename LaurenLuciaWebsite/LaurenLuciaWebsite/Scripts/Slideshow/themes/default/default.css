@@ -59,18 +59,12 @@ Supports Thumbs: true
 }
 .theme-default:hover .nivo-directionNav a { opacity: 1; }
 .theme-default a.nivo-nextNav {
-	background:url(arrows.png);
-  height:1000px; /*height of img*/
-  width:1000px; /*width of img*/
-  overflow:hidden; /*hiding the default text*/
-  position:absolute;
+	background-position:-30px 0;
+	right:15px;
 }
 .theme-default a.nivo-prevNav {
-	background:transparent url(arrows.png) 0 0 no-repeat;
-  height:20px; /*height of img*/
-  width:10px; /*width of img*/
-  text-indent:-10000px; /*moving the default text*/
-  overflow:hidden; /*hiding the default text*/
+    background-position:6px 0;
+	left:11px;
 }
 
 .theme-default .nivo-caption {

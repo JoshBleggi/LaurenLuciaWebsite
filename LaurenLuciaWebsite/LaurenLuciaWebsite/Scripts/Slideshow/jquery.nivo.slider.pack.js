@@ -91,7 +91,7 @@
             }, r.pauseTime)
         }
         if (r.directionNav) {
-            s.append('<div class="nivo-directionNav"><a class="theme-default nivo-prevNav">' + '</a><a class="theme-default nivo-nextNav">' + "</a></div>");
+            s.append('<div class="nivo-directionNav"><a class="nivo-prevNav">' + r.prevText + '</a><a class="nivo-nextNav">' + r.nextText + "</a></div>");
             e(s).on("click", "a.nivo-prevNav", function () {
                 if (i.running) {
                     return false
@@ -594,6 +594,8 @@
         controlNavThumbs: false,
         pauseOnHover: true,
         manualAdvance: false,
+        prevText: "Previous",
+        nextText: "Next",
         randomStart: false,
         beforeChange: function () { },
         afterChange: function () { },

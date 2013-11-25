@@ -20,7 +20,7 @@
             running: false,
             paused: false,
             stop: false,
-            controlNavEl: false
+            controlNavEl: true
         };
 
         // Get this slider
@@ -121,7 +121,7 @@
         
         // Add Direction nav
         if(settings.directionNav){
-            slider.append('<div class="nivo-directionNav"><a class="nivo-prevNav">'+ settings.prevText +'</a><a class="nivo-nextNav">'+ settings.nextText +'</a></div>');
+            slider.append('<div class="nivo-directionNav"><a class="nivo-prevNav"></a><a class="nivo-nextNav"></a></div>');
             
             $(slider).on('click', 'a.nivo-prevNav', function(){
                 if(vars.running) { return false; }
@@ -642,7 +642,7 @@
         pauseTime: 3000,
         startSlide: 0,
         directionNav: true,
-        controlNav: true,
+        controlNav: false,
         controlNavThumbs: false,
         pauseOnHover: true,
         manualAdvance: false,

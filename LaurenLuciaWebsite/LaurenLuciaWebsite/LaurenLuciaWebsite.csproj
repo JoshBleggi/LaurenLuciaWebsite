@@ -192,16 +192,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\About.png" />
-    <Content Include="Content\Images\LaurenImages\Nav\Unselected\Bio.png" />
+    <Content Include="Content\Images\LaurenImages\Nav\Unselected\Cad.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Collections.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Contact.png" />
+    <Content Include="Content\Images\LaurenImages\Nav\Unselected\Editorial.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Lookbook.png" />
+    <Content Include="Content\Images\LaurenImages\Nav\Unselected\News.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Runway.png" />
-    <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide3.jpg" />
-    <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide1.jpg" />
-    <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide2.jpg" />
-    <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide4.jpg" />
+    <Content Include="Content\Images\LaurenImages\Nav\Unselected\Shared\Autumn Winter 2014.png" />
+    <Content Include="Content\Images\LaurenImages\Nav\Unselected\Shared\Past Work.png" />
     <Content Include="Content\Images\LaurenImages\Nav\White Logo Transparent.png" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide4.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide2.jpg" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -285,6 +289,7 @@
     <Content Include="Content\Images\LaurenImages\Nav\Selected\Collections\tops2.jpg" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Runway\viscous1.jpg" />
     <Content Include="Content\Images\LaurenImages\Nav\Selected\Runway\viscous2.jpg" />
+    <Content Include="Scripts\sidebar.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -377,6 +382,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\LaurenImages\Nav\Unselected\Editorials\" />
     <Folder Include="Content\Images\LaurenImages\Slideshow\Collections\" />
     <Folder Include="Content\Images\LaurenImages\Slideshow\Products\" />
   </ItemGroup>
