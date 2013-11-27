@@ -10,18 +10,20 @@
         @RenderSection("scripts", required: false)
     </head>
     <body>
-            <div id="sidebar" style="width:15%;border-left-color:white;float:left;clear:left">
-                <ul style="height:100%; width: 100%; padding:0px">
-                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/White Logo Transparent.png') no-repeat; display: block; height: 150px; margin-left:10%;"></a></li>
-                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Editorial.png') no-repeat; display: block; height: 38px; margin-left:10%;"></a></li>
-                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Collections.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
-                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Runway.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
-                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Cad.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
-                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/News.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
-                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/About.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
-                    <li style="border-bottom: 1px solid #333333;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Contact.png') no-repeat; display: block; height: 38px; margin-left: 10%;"></a></li>
+            <div style="width: 15%; border-left-color: white; float: left; clear: left;">
+                <ul class="sidebar">
+                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/White Logo Transparent.png') no-repeat;height:150px;"></a></li>
+                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Editorial.png') no-repeat;"></a></li>
+                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Editorial.png') no-repeat;"></a></li>
+                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Editorial.png') no-repeat;"></a></li>
+                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Collections.png') no-repeat;"></a></li>
+                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Runway.png') no-repeat;"></a></li>
+                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Cad.png') no-repeat;"></a></li>
+                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/News.png') no-repeat;"></a></li>
+                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/About.png') no-repeat;"></a></li>
+                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Contact.png') no-repeat;"></a></li>
                 </ul>
-                </div>
+            </div>
                 <div style="width: 85%; float: right; ">
                     @RenderSection("featured", required: false)
                     </div>

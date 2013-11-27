@@ -330,6 +330,26 @@ aside {
     font-weight: 700;
 }
 
+.sidebar div{
+
+}
+
+.sidebar ul{
+    height:100%;
+    width: 100%;
+    padding:0px;
+}
+
+.sidebar li{
+    border-bottom: 1px solid #333333;
+}
+
+.sidebar a{
+     display: block; 
+     height: 38px; 
+     margin-left:10%;
+}
+
 /* login page */
 #loginForm {
     border-right: solid 2px #c8c8c8;
