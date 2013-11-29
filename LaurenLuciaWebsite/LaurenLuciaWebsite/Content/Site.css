@@ -229,7 +229,7 @@ ul#menu {
 
         .featured p {
             font-size: 1.1em;
-            color: #fff;
+            color: #ffffff;
         }
 
 /* page titles */
@@ -337,7 +337,6 @@ aside {
 .sidebar ul{
     height:100%;
     width: 100%;
-    padding:0px;
 }
 
 .sidebar li{
@@ -348,6 +347,75 @@ aside {
      display: block; 
      height: 38px; 
      margin-left:10%;
+}
+
+.EditorialSub{
+    display:none;
+}
+
+.EditorialSub a{
+    margin-left:25%;
+}
+
+.Editorial{
+    border-bottom: 1px solid #333333;
+}
+
+.Editorial:hover + .EditorialSub{
+    display: block;
+    border-bottom: 1px solid #333333;
+    -moz-animation: 2s ease;
+}
+
+.EditorialSub:hover{
+    display: block;
+    border-bottom: 1px solid #333333;
+}
+
+.CollectionsSub{
+    display:none;
+}
+
+.CollectionsSub a{
+    margin-left:25%;
+}
+
+.Collections{
+    border-bottom: 1px solid #333333;
+}
+
+.Collections:hover + .CollectionsSub{
+    display: block;
+    border-bottom: 1px solid #333333;
+    -moz-animation: 2s ease;
+}
+
+.CollectionsSub:hover{
+    display: block;
+    border-bottom: 1px solid #333333;
+}
+
+.RunwaySub{
+    display:none;
+}
+
+.RunwaySub a{
+    margin-left:25%;
+}
+
+.Runway{
+    border-bottom: 1px solid #333333;
+}
+
+.Runway:hover + .RunwaySub{
+    display: block;
+    border-bottom: 1px solid #333333;
+    -moz-animation: 2s ease;
+}
+
+.RunwaySub:hover{
+    display: block;
+    border-bottom: 1px solid #333333;
 }
 
 /* login page */

@@ -196,12 +196,14 @@
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Collections.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Contact.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Editorial.png" />
+    <Content Include="Content\Images\LaurenImages\Nav\Unselected\Editorials\Lingerie.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Lookbook.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\News.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Runway.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Shared\Autumn Winter 2014.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Shared\Past Work.png" />
     <Content Include="Content\Images\LaurenImages\Nav\White Logo Transparent.png" />
+    <Content Include="Content\Images\LaurenImages\AboutPhoto.JPG" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide1.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide2.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide3.jpg" />
@@ -342,19 +344,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Content\Site.css" />
-    <Content Include="Content\Images\accent.png" />
-    <Content Include="Content\Images\bullet.png" />
-    <Content Include="Content\Images\heroAccent.png" />
-    <Content Include="Content\Images\orderedList0.png" />
-    <Content Include="Content\Images\orderedList1.png" />
-    <Content Include="Content\Images\orderedList2.png" />
-    <Content Include="Content\Images\orderedList3.png" />
-    <Content Include="Content\Images\orderedList4.png" />
-    <Content Include="Content\Images\orderedList5.png" />
-    <Content Include="Content\Images\orderedList6.png" />
-    <Content Include="Content\Images\orderedList7.png" />
-    <Content Include="Content\Images\orderedList8.png" />
-    <Content Include="Content\Images\orderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -382,7 +371,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\LaurenImages\Nav\Unselected\Editorials\" />
     <Folder Include="Content\Images\LaurenImages\Slideshow\Collections\" />
     <Folder Include="Content\Images\LaurenImages\Slideshow\Products\" />
   </ItemGroup>

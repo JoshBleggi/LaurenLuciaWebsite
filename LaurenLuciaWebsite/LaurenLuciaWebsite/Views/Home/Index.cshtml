@@ -5,21 +5,6 @@
         ViewBag.Title = "Home Page";
 }
 
-<script type="text/javascript">
-    function EditorialMouseOver() {
-        mar = document.getElementById('EditorialSubMargin');
-        mar.hidden = false;
-        el = document.getElementById('EditorialSub');
-        el.hidden = false;
-    }
-
-    function EditorialMouseOut() {
-        mar = document.getElementsById('EditorialSubMargin');
-        mar.hidden = true;
-        el = document.getElementsById('EditorialSub');
-        el.hidden = true;
-    }
-</script>
     @section featured {
         <section>
 
@@ -32,8 +17,8 @@
                     $('#slider').nivoSlider();
                 });
             </script>
-            <div id="wrapper">
-                <div class="slider-wrapper theme-default">
+            <div id="wrapper" >
+                <div class="theme-default">
                     <div id="slider" class="nivoSlider">
                         <img src="../../Content/Images/LaurenImages/Slideshow/Dashboard/slide1.jpg" alt="" />
                         <img src="../../Content/Images/LaurenImages/Slideshow/Dashboard/slide2.jpg" alt="" />
@@ -42,15 +27,22 @@
                     </div>
                 </div>
             </div>
-            <div id="content">
+            <div class="featured">
                 <table style="width:97%;">
                     <tr style="height: 50px; width:100%;">
                         <td style="width:1%;"></td>
                         <td style=" border-bottom: 1px solid #333333;"></td>
+                        <td style=" border-bottom: 1px solid #333333;"></td>
                     </tr>
                     <tr style="height: 200px; width: 100%;">
                         <td style="width:1%;"></td>
-                        <td style=" border-bottom: 1px solid #333333;"></td>
+                        <td style=" border-bottom: 1px solid #333333;">             
+                        <img src="../../Content/Images/LaurenImages/AboutPhoto.JPG" alt="" style="margin-bottom: 12px; margin-top: 12px; margin-left:4px; border:8px solid #282828"/>
+                                      
+                        </td>
+                        <td style=" border-bottom: 1px solid #333333;"><p style="font-size:24px; font-family: 'Palatino Linotype'; float: left">Inspired at an early age by her grandmother’s work as a master tailor, Lauren DiBartolomeo developed a passion for the intricacy of sewing and turning fabric into a wearable work of art. </p>
+                            <br /><br /><br /><br /><br /><br /><br /><br /><br />                          
+                        <a href="About.cshtml">Read More</a></td>
                     </tr>
                     <tr style="height:50px;"></tr>
                 </table>
