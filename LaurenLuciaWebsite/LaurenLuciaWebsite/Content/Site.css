@@ -473,15 +473,18 @@ aside {
 /* contact */
 .contact h3 {
     font-size: 1.2em;
+    color:white;
 }
 
 .contact p {
     margin: 5px 0 0 10px;
+    color:white;
 }
 
 .contact iframe {
     border: 1px solid #333;
     margin: 5px 0 0 10px;
+    color:white;
 }
 
 /* forms */

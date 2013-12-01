@@ -7,44 +7,23 @@
     <h2>@ViewBag.Message</h2>
 </hgroup>
 
+@section featured{
 <section class="contact">
-    <header>
-        <h3>Phone</h3>
-    </header>
-    <p>
-        <span class="label">Main:</span>
-        <span>425.555.0100</span>
-    </p>
-    <p>
-        <span class="label">After Hours:</span>
-        <span>425.555.0199</span>
-    </p>
+    <div>
+        <table>
+            <tr style="height:150px"></tr>
+            <tr>
+                <td style="width:4%"></td>
+                <td style="width:430px">
+                    <img src="../../Content/Images/LaurenImages/Contact/Hats.jpg" alt="" style="margin-bottom: 25px; margin-top: 25px; margin-left:8px; border:10px solid #282828" />
+                </td>
+                <td>
+                    <p style="font-size:24px; font-family: 'Palatino Linotype'; float: left">For Questions, Comments, Sales Inquiries, or Press, please contact LDiBartolomeo@LaurenLucia.com  </p>
+                </td>
+                <td style="width:2%"></td>
+            </tr>
+            <tr></tr>
+        </table>
+    </div>
 </section>
-
-<section class="contact">
-    <header>
-        <h3>Email</h3>
-    </header>
-    <p>
-        <span class="label">Support:</span>
-        <span><a href="mailto:Support@example.com">Support@example.com</a></span>
-    </p>
-    <p>
-        <span class="label">Marketing:</span>
-        <span><a href="mailto:Marketing@example.com">Marketing@example.com</a></span>
-    </p>
-    <p>
-        <span class="label">General:</span>
-        <span><a href="mailto:General@example.com">General@example.com</a></span>
-    </p>
-</section>
-
-<section class="contact">
-    <header>
-        <h3>Address</h3>
-    </header>
-    <p>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399
-    </p>
-</section>
+}

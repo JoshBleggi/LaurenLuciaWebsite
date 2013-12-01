@@ -192,6 +192,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\LaurenImages\About\photo.JPG" />
+    <Content Include="Content\Images\LaurenImages\Contact\Hats.jpg" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\About.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Cad.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Collections.png" />
