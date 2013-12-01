@@ -1,48 +1,54 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>@ViewBag.Title - Lauren Lucia</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-    </head>
-    <body>
-            <div style="width: 263px; border-left-color: white; overflow: hidden; padding: 0px; float:left">
-                <ul class="sidebar" style="padding:0px; margin:0px;">
-                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/White Logo Transparent.png') no-repeat;height:150px;"></a></li>
-                    <li class="Editorial"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Editorial.png') no-repeat;"></a></li>
-                    <li class="EditorialSub">
-                        <ul style="padding: 0px;">
-                            <li><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Autumn Winter 2014.png') no-repeat;"></a></li>
-                            <li><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Editorials/Lingerie.png') no-repeat;"></a></li>
-                            <li style="border-bottom:none;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Past Work.png') no-repeat;"></a></li>
-                        </ul>
-                    </li>
-                    <li class="Collections"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Collections.png') no-repeat;"></a></li>
-                    <li class="CollectionsSub">
-                        <ul style="padding: 0px;">
-                            <li><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Autumn Winter 2014.png') no-repeat;"></a></li>
-                            <li style="border-bottom:none;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Past Work.png') no-repeat;"></a></li>
-                        </ul>
-                    </li>
-                    <li class="Runway"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Runway.png') no-repeat;"></a></li>
-                    <li class="RunwaySub">
-                        <ul style="padding: 0px;">
-                            <li><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Autumn Winter 2014.png') no-repeat;"></a></li>
-                            <li style="border-bottom:none;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Past Work.png') no-repeat;"></a></li>
-                        </ul>
-                    </li>
-                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Cad.png') no-repeat;"></a></li>
-                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/News.png') no-repeat;"></a></li>
-                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/About.png') no-repeat;"></a></li>
-                    <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Contact.png') no-repeat;"></a></li>
+<html lang="en" style="height: 100%; position: absolute">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Lauren Lucia</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</head>
+<body style="height: 100%;position:absolute">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#navBar").height($(this).height())
+        });
+    </script>
+    <div id="navBar" style="width: 263px; border-left-color: white; overflow: hidden; padding: 0px; float:left; background-color: #1d1b1b">
+        <ul class="sidebar" style="padding:0px; margin:0px;">
+            <li class="sidebar"><a class="sidebar" href="~/Home/Index" style="background: url('../../Content/Images/LaurenImages/Nav/White Logo Transparent.png') no-repeat;height:150px;"></a></li>
+            <li class="Editorial"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Editorial.png') no-repeat;"></a></li>
+            <li class="EditorialSub">
+                <ul style="padding: 0px;">
+                    <li><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Autumn Winter 2014.png') no-repeat;"></a></li>
+                    <li><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Editorials/Lingerie.png') no-repeat;"></a></li>
+                    <li style="border-bottom:none;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Past Work.png') no-repeat;"></a></li>
                 </ul>
-            </div>
-                <div style="margin-left:263px">
-                    @RenderSection("featured", required: false)
-                    </div>
-    </body>
+            </li>
+            <li class="Collections"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Collections.png') no-repeat;"></a></li>
+            <li class="CollectionsSub">
+                <ul style="padding: 0px;">
+                    <li><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Autumn Winter 2014.png') no-repeat;"></a></li>
+                    <li style="border-bottom:none;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Past Work.png') no-repeat;"></a></li>
+                </ul>
+            </li>
+            <li class="Runway"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Runway.png') no-repeat;"></a></li>
+            <li class="RunwaySub">
+                <ul style="padding: 0px;">
+                    <li><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Autumn Winter 2014.png') no-repeat;"></a></li>
+                    <li style="border-bottom:none;"><a style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Shared/Past Work.png') no-repeat;"></a></li>
+                </ul>
+            </li>
+            <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Cad.png') no-repeat;"></a></li>
+            <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/News.png') no-repeat;"></a></li>
+            <li class="sidebar"><a class="sidebar" href="~/Home/About" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/About.png') no-repeat;"></a></li>
+            <li class="sidebar"><a class="sidebar" style="background: url('../../Content/Images/LaurenImages/Nav/Unselected/Contact.png') no-repeat;"></a></li>
+        </ul>
+    </div>
+    <div style="margin-left:264px">
+        @RenderSection("featured", required: false)
+    </div>
+</body>
 </html>
+

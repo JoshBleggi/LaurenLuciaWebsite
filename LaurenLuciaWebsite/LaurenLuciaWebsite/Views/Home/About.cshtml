@@ -2,33 +2,24 @@
     ViewBag.Title = "About";
 }
 
-<hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-    <h2>@ViewBag.Message</h2>
-</hgroup>
-
-<article>
-    <p>
-        Use this area to provide additional information.
-    </p>
-
-    <p>
-        Use this area to provide additional information.
-    </p>
-
-    <p>
-        Use this area to provide additional information.
-    </p>
-</article>
-
-<aside>
-    <h3>Aside Title</h3>
-    <p>
-        Use this area to provide additional information.
-    </p>
-    <ul>
-        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-        <li>@Html.ActionLink("About", "About", "Home")</li>
-        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-    </ul>
-</aside>
+@section featured {
+<section>
+    <div class="featured">
+        <table>
+            <tr style="height:150px"></tr>
+            <tr>
+                <td style="width:4%"></td>
+                <td style="width:430px">
+                    <img src="../../Content/Images/LaurenImages/About/photo.JPG" alt="" style="margin-bottom: 25px; margin-top: 25px; margin-left:8px; border:10px solid #282828" />
+                </td>
+                <td>
+                    <p style="font-size:24px; font-family: 'Palatino Linotype'; float: left">Inspired at an early age by her grandmother’s work as a master tailor, Lauren DiBartolomeo developed a passion for the intricacy of sewing and turning fabric into a wearable work of art.  Many elements that can be found in a Lauren Lucia garment are based on techniques learned and refined at Lasell College, the American Intercontinental University of London, and Oscar de la Renta.</p>
+                    <p style="font-size:24px; font-family: 'Palatino Linotype'; float: left">With an eye for detail, Lauren draws inspiration from her surroundings, often seeing beauty in unlikely and overlooked places.  From these surprises she fashions clothes that are ultimately wearable and flattering with a sense of timeless style.  </p>
+                </td>
+                <td style="width:2%"></td>
+            </tr>
+            <tr></tr>
+        </table>
+    </div>
+</section>
+}
