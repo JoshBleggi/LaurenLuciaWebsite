@@ -370,11 +370,20 @@
     <Content Include="Scripts\Slideshow\README" />
     <Content Include="Scripts\Slideshow\themes\.DS_Store" />
     <Content Include="Scripts\Slideshow\themes\dark\.DS_Store" />
+    <Content Include="Views\Home\News.cshtml" />
+    <Content Include="Views\Collections\aw2014.cshtml" />
+    <Content Include="Views\Collections\Lingerie.cshtml" />
+    <Content Include="Views\Collections\pastWork.cshtml" />
+    <Content Include="Views\Editorials\aw2014.cshtml" />
+    <Content Include="Views\Editorials\pastWork.cshtml" />
+    <Content Include="Views\Runway\aw2014.cshtml" />
+    <Content Include="Views\Runway\pastWork.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Images\LaurenImages\Slideshow\Collections\" />
     <Folder Include="Content\Images\LaurenImages\Slideshow\Products\" />
+    <Folder Include="Views\CAD\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
