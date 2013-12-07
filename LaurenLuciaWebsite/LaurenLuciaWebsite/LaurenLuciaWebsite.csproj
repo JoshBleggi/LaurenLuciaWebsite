@@ -310,6 +310,18 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\Slideshow\Bespoke\demo\demo.js" />
+    <Content Include="Scripts\Slideshow\Bespoke\demo\index.html" />
+    <Content Include="Scripts\Slideshow\Bespoke\demo\profile.jpg" />
+    <Content Include="Scripts\Slideshow\Bespoke\demo\style.css" />
+    <Content Include="Scripts\Slideshow\Bespoke\demo\themes.css" />
+    <Content Include="Scripts\Slideshow\Bespoke\dist\bespoke.js" />
+    <Content Include="Scripts\Slideshow\Bespoke\dist\bespoke.min.js" />
+    <Content Include="Scripts\Slideshow\Bespoke\Gruntfile.js" />
+    <Content Include="Scripts\Slideshow\Bespoke\libs\es5-shim\es5-shim.js" />
+    <Content Include="Scripts\Slideshow\Bespoke\libs\sinon\sinon.js" />
+    <Content Include="Scripts\Slideshow\Bespoke\specs\BespokeSpec.js" />
+    <Content Include="Scripts\Slideshow\Bespoke\src\bespoke.js" />
     <Content Include="Scripts\Slideshow\demo\demo.html" />
     <Content Include="Scripts\Slideshow\demo\images\dev7logo.png" />
     <Content Include="Scripts\Slideshow\demo\images\nemo.jpg" />
@@ -378,6 +390,12 @@
     <Content Include="Views\Editorials\pastWork.cshtml" />
     <Content Include="Views\Runway\aw2014.cshtml" />
     <Content Include="Views\Runway\pastWork.cshtml" />
+    <Content Include="Scripts\Slideshow\Bespoke\.bower.json" />
+    <Content Include="Scripts\Slideshow\Bespoke\bower.json" />
+    <Content Include="Scripts\Slideshow\Bespoke\CONTRIBUTING.md" />
+    <Content Include="Scripts\Slideshow\Bespoke\LICENSE-MIT" />
+    <Content Include="Scripts\Slideshow\Bespoke\package.json" />
+    <Content Include="Scripts\Slideshow\Bespoke\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

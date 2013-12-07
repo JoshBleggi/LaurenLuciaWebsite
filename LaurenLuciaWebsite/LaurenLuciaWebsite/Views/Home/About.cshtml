@@ -4,7 +4,12 @@
 
 @section featured {
 <section>
-    <div class="featured">
+    <div id="contentSection" class="featured">
+        <script type="text/javascript">
+            $(window).load(function () {
+                $("#navBar").css("height", $("html").height())
+            });
+        </script>
         <table>
             <tr style="height:150px"></tr>
             <tr>

@@ -6,19 +6,16 @@
 }
 
     @section featured {
-        <section>
+        <section id="contentSection">
 
             <link rel="stylesheet" href="../../Scripts/Slideshow/themes/default/default.css" type="text/css" media="screen" />
             <link rel="stylesheet" href="../../Scripts/Slideshow/nivo-slider.css" type="text/css" />
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
             <script src="../../Scripts/Slideshow/jquery.nivo.slider.js" type="text/javascript"></script>
             <script type="text/javascript">
-                $(document).ready(function () {
-                    $("#navBar").height(1330)
-                });
-
                 $(window).load(function () {
                     $('#slider').nivoSlider();
+                    $("#navBar").css("height", $("#contentSection").height())
                 });
             </script>
             <div id="wrapper" >
