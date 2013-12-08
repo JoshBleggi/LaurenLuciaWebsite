@@ -180,6 +180,7 @@
 
 /* Classic Theme */
 .classic {
+    width: 100%;
 }
 .classic .arrow:hover {
 	background: rgb(243, 111, 86);
@@ -234,11 +235,15 @@
 	opacity: 0.3;
 }
 
+.classic img{
+    height: 100%;
+    width: auto;
+}
+
 /* Carousel Theme */
 .carousel {
 	background: rgba(121, 255, 0, 0.2);
 }
-.carousel section,
 .carousel .arrow:hover {
 	background: rgb(131, 199, 69);
 }

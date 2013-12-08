@@ -181,7 +181,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CollectionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -206,6 +206,44 @@
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Shared\Past Work.png" />
     <Content Include="Content\Images\LaurenImages\Nav\White Logo Transparent.png" />
     <Content Include="Content\Images\LaurenImages\AboutPhoto.JPG" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Gown 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Gown 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Gown 3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Gown 4.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\LBD 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\LBD 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Red Shirt 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Red Shirt 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Red Shirt 3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Red Shirt Black Coat 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Red Shirt Black Coat 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Red Shirt Black Coat 3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Shark Dress 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Shark Dress 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Shark Dress Cardi 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Shark Dress Cardi 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Shark Dress Cardi 3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Sweater 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Sweater 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Sweater Blazer 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Sweater Blazer 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Sweater Dress 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Sweater Dress 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Sweater Dress 3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Teal Skirt 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Teal Skirt 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Teal Skirt 3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Trench 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Trench 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Trench 3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Trench 4.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Tshirt 2 Variation 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Tshirt 2 Variation 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Tshirt 2 Variation 3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Tshirt Variation 1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Tshirt Variation 2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Tshirt Variation 3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Tshirt Variation 4.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide1.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide2.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide3.jpg" />
@@ -322,6 +360,9 @@
     <Content Include="Scripts\Slideshow\Bespoke\libs\sinon\sinon.js" />
     <Content Include="Scripts\Slideshow\Bespoke\specs\BespokeSpec.js" />
     <Content Include="Scripts\Slideshow\Bespoke\src\bespoke.js" />
+    <Content Include="Scripts\Slideshow\Bespoke\src\actual.js" />
+    <Content Include="Scripts\Slideshow\Bespoke\style.css" />
+    <Content Include="Scripts\Slideshow\Bespoke\themes.css" />
     <Content Include="Scripts\Slideshow\demo\demo.html" />
     <Content Include="Scripts\Slideshow\demo\images\dev7logo.png" />
     <Content Include="Scripts\Slideshow\demo\images\nemo.jpg" />
@@ -359,15 +400,6 @@
     </Content>
     <Content Include="Content\Site.css" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
-    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Manage.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -399,7 +431,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\LaurenImages\Slideshow\Collections\" />
     <Folder Include="Content\Images\LaurenImages\Slideshow\Products\" />
     <Folder Include="Views\CAD\" />
   </ItemGroup>
