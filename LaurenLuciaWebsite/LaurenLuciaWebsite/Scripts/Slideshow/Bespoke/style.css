@@ -227,7 +227,10 @@ section {
 	-ms-transform: none;
 	-o-transform: none;
 	transform: none;
+	background: #c0c0c0;
+	border-radius: 30px;
 	position: absolute;
+	left: 35%;
 	opacity: 0;
 }
 body,
