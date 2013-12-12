@@ -13,15 +13,17 @@
             var gWidth = $("#main").width() - parseInt($("#gallery").css("marginLeft"));
             $("#gallery").css("width", gWidth);
 
-
-            var center = (parseInt($("#gallery").css("width")) - parseInt($("#firstImg").css("width"))) * 1 / 3;
-            $("#firstImg").css("left", center);
+            adjustGallery();
         });
 
         $(window).resize(function () {
             $("#navBar").css("height", $("html").height());
 
-            var center = (parseInt($("#gallery").css("width")) - parseInt($("#firstImg").css("width"))) * 1/3;
+            adjustGallery();
+        });
+
+        function adjustGallery() {
+            var center = (parseInt($("#gallery").css("width")) - parseInt($("#firstImg").css("width"))) * 1 / 3;
             $("#firstImg").css("left", center);
 
             $('.classic section.bespoke-before').css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -3).toString() + "px, 0, 0)");
@@ -54,7 +56,7 @@
             $('.classic section.bespoke-after-1').css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)");
             $('.classic section.bespoke-after-1').css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)");
             $('.classic section.bespoke-after-1').css("transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)");
-        });
+        }
     </script>
     <div id="main" style=" width:100%; height:100%;">
         <article id="gallery" style="margin-left:264px;" >

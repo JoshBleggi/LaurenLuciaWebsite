@@ -331,6 +331,7 @@
     <Content Include="Content\Images\LaurenImages\Nav\Selected\Collections\tops2.jpg" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Runway\viscous1.jpg" />
     <Content Include="Content\Images\LaurenImages\Nav\Selected\Runway\viscous2.jpg" />
+    <Content Include="Scripts\jquery.rule.js" />
     <Content Include="Scripts\sidebar.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
