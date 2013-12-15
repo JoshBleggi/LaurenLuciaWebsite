@@ -22,7 +22,7 @@
 					removeClass(activeSlide, 'inactive');
 				},
 
-				deactivate = function(slide, index) {
+				deactivate = function(slide, index) { 
 					var offset = index - slides.indexOf(activeSlide),
 						offsetClass = offset > 0 ? 'after' : 'before';
 
@@ -39,7 +39,9 @@
 				step = function(offset, customData) {
 					var slideIndex = slides.indexOf(activeSlide) + offset;
 
-					fire(offset > 0 ? 'next' : 'prev', createEventData(activeSlide, customData)) && activate(slideIndex, customData);
+					if (slideIndex > 0 && slideIndex < slides.length - 1) {
+					    fire(offset > 0 ? 'next' : 'prev', createEventData(activeSlide, customData)) && activate(slideIndex, customData);
+					}
 				},
 
 				on = function(eventName, callback) {
@@ -86,7 +88,7 @@
 				plugins[pluginName](deck, selectedPlugins[pluginName]);
 			}
 
-			activate(0);
+			activate(1);
 
 			decks.push(deck);
 
