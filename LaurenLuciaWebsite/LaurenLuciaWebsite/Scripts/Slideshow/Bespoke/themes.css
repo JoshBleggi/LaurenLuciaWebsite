@@ -58,5 +58,35 @@
 .classic img{
     height: 100%;
     width: auto;
+}
 
+.classic .bespoke-directionNav a{
+    position:absolute;
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	opacity: 0;
+    z-index:3;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.classic:hover .bespoke-directionNav a{
+    opacity: 1;
+}
+
+.classic a.bespoke-nextNav {
+	background-position:-30px 0;
+    top: 50%;
+	right:25%;
+}
+.classic a.bespoke-prevNav {
+    background-position:6px 0;
+    top: 50%;
+	right: 50%;
 }
