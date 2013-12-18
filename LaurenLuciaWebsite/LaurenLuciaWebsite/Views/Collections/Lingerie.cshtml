@@ -1,5 +1,103 @@
 ﻿@{
-    ViewBag.Title = "Lingerie";
+    ViewBag.Title = "Collections - Lingerie";
 }
 
-<h2>Lingerie</h2>
+@section featured{
+    <body class="classic">
+        <link rel="stylesheet" type="text/css" href="../../Scripts/Slideshow/Bespoke/themes.css" />
+        <link rel="stylesheet" type="text/css" href="../../Scripts/Slideshow/Bespoke/style.css" />
+        <script type="text/javascript" src="../../Scripts/jquery.rule.js"></script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $("#navBar").css("height", $("html").height());
+
+                var gWidth = $("#main").width() - parseInt($("#gallery").css("marginLeft"));
+                $("#gallery").css("width", gWidth);
+
+                adjustCss();
+                adjustNav();
+            });
+
+            $(window).resize(function () {
+                $("#navBar").css("height", $("html").height());
+
+                adjustCss();
+                adjustNav();
+            });
+
+            function adjustCss() {
+                $.rule('.classic section.bespoke-before', 'link').remove();
+                $.rule('.classic section.bespoke-before-2', 'link').remove();
+                $.rule('.classic section.bespoke-before-1', 'link').remove();
+                $.rule('.classic section.bespoke-after', 'link').remove();
+                $.rule('.classic section.bespoke-after-2', 'link').remove();
+                $.rule('.classic section.bespoke-after-1', 'link').remove();
+                $.rule('.classic section.bespoke-before{}').appendTo('link')
+                .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -3).toString() + "px, 0, 0)")
+                .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -3).toString() + "px, 0, 0)")
+                .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -3).toString() + "px, 0, 0)")
+                .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -3).toString() + "px, 0, 0)")
+                .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -3).toString() + "px, 0, 0)");
+                $.rule('.classic section.bespoke-before-2{}').appendTo('link')
+                .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -2).toString() + "px, 0, 0)")
+                .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -2).toString() + "px, 0, 0)")
+                .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -2).toString() + "px, 0, 0)")
+                .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -2).toString() + "px, 0, 0)")
+                .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -2).toString() + "px, 0, 0)")
+                .css("opacity", "0.3");
+                $.rule('.classic section.bespoke-before-1{}').appendTo('link')
+                .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -1).toString() + "px, 0, 0)")
+                .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -1).toString() + "px, 0, 0)")
+                .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -1).toString() + "px, 0, 0)")
+                .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -1).toString() + "px, 0, 0)")
+                .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -1).toString() + "px, 0, 0)")
+                .css("opacity", "0.3");
+                $.rule('.classic section.bespoke-after{}').appendTo('link')
+                .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 3).toString() + "px, 0, 0)")
+                .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 3).toString() + "px, 0, 0)")
+                .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 3).toString() + "px, 0, 0)")
+                .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 3).toString() + "px, 0, 0)")
+                .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 3).toString() + "px, 0, 0)");
+                $.rule('.classic section.bespoke-after-2{}').appendTo('link')
+                .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 2).toString() + "px, 0, 0)")
+                .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 2).toString() + "px, 0, 0)")
+                .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 2).toString() + "px, 0, 0)")
+                .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 2).toString() + "px, 0, 0)")
+                .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 2).toString() + "px, 0, 0)")
+                .css("opacity", "0.3");
+                $.rule('.classic section.bespoke-after-1{}').appendTo('link')
+                .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)")
+                .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)")
+                .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)")
+                .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)")
+                .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)")
+                .css("opacity", "0.3");
+            }
+
+            function adjustNav() {
+                var activeSlideRect = document.getElementsByClassName("bespoke-active").item(0).getBoundingClientRect();
+                $("#prevNav").css("left", (activeSlideRect.left + (parseInt($("#firstImg").css("width")) * 1 / 15)).toString() + "px")
+                $("#nextNav").css("left", (activeSlideRect.left + (parseInt($("#firstImg").css("width")) * 14 / 15) - $("#nextNav").width()).toString() + "px")
+            }
+        </script>
+        <div id="main" style=" width:100%; height:100%;z-index:-1;position:absolute;">
+            <header>
+                <div class="bespoke-directionNav"><a id="prevNav" class="bespoke-prevNav"></a><a id="nextNav" class="bespoke-nextNav"></a></div>
+            </header>
+            <article id="gallery" style="margin-left: 264px;">
+                <section><img src="../../Content/Images/LaurenImages/Slideshow/Slide0.jpg" /></section>
+                <section><img id="firstImg" src="../../Content/Images/LaurenImages/Slideshow/Collections/aw2014/Lingerie/Slide1.jpg" /></section>
+                <section><img src="../../Content/Images/LaurenImages/Slideshow/Collections/aw2014/Lingerie/Slide2.jpg" /></section>
+                <section><img src="../../Content/Images/LaurenImages/Slideshow/Collections/aw2014/Lingerie/Slide3.jpg" /></section>
+                <section><img src="../../Content/Images/LaurenImages/Slideshow/Collections/aw2014/Lingerie/Slide4.jpg" /></section>
+                <section><img src="../../Content/Images/LaurenImages/Slideshow/Collections/aw2014/Lingerie/Slide5.jpg" /></section>
+                <section><img src="../../Content/Images/LaurenImages/Slideshow/Collections/aw2014/Lingerie/Slide6.jpg" /></section>
+                <section><img src="../../Content/Images/LaurenImages/Slideshow/Slide0.jpg" /></section>
+            </article>
+        </div>
+        <script src="../../Scripts/Slideshow/Bespoke/src/bespoke.js"></script>
+        <script src="../../Scripts/Slideshow/Bespoke/src/actual.js"></script>
+    </body>
+}
+
+

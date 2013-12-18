@@ -19,7 +19,12 @@ namespace LaurenLuciaWebsite.Controllers
         //
         // GET: /Collections/Details/5
 
-        public ActionResult pastWork(int id)
+        public ActionResult Lingerie()
+        {
+            return View();
+        }
+
+        public ActionResult pastWork()
         {
             return View();
         }

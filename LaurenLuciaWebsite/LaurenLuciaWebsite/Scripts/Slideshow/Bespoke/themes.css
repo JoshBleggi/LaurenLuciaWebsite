@@ -78,6 +78,7 @@
 
 .classic:hover .bespoke-directionNav a{
     opacity: 1;
+    cursor:pointer;
 }
 
 .classic a.bespoke-nextNav {

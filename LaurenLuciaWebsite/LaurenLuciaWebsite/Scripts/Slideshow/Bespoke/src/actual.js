@@ -21,7 +21,7 @@
 		selectedThemeIndex = 0;
 
 		initInstructions();
-		initKeys();
+		initListener();
 		initSlideGestures();
 		initThemeGestures();
 		initButtons();
@@ -37,7 +37,7 @@
 		instructionsTimeout = setTimeout(showInstructions, 5000);
 	}
 
-	function initKeys() {
+	function initListener() {
 		if (/Firefox/.test(navigator.userAgent)) {
 			document.addEventListener('keydown', function(e) {
 				if (e.which >= 37 && e.which <= 40) {
@@ -45,6 +45,14 @@
 				}
 			});
 		}
+
+		document.getElementById("prevNav").addEventListener('click', function () {
+		    deck.prev();
+		});
+
+		document.getElementById("nextNav").addEventListener('click', function () {
+		    deck.next();
+		});
 
 		document.addEventListener('keydown', function(e) {
 			var key = e.which;
@@ -56,6 +64,7 @@
 			key === 40 && nextTheme();
 		});
 	}
+
 
 	function initSlideGestures() {
 		var main = document.getElementById('main'),

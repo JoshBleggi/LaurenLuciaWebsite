@@ -198,7 +198,7 @@
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Collections.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Contact.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Editorial.png" />
-    <Content Include="Content\Images\LaurenImages\Nav\Unselected\Editorials\Lingerie.png" />
+    <Content Include="Content\Images\LaurenImages\Nav\Unselected\Shared\Lingerie.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Lookbook.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\News.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Runway.png" />
@@ -243,6 +243,12 @@
     <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Slide5.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Slide8.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Slide9.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Lingerie\Slide1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Lingerie\Slide2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Lingerie\Slide3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Lingerie\Slide4.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Lingerie\Slide5.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Lingerie\Slide6.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide1.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide2.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide3.jpg" />
@@ -433,6 +439,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\LaurenImages\Nav\Unselected\Editorials\" />
     <Folder Include="Content\Images\LaurenImages\Slideshow\Products\" />
     <Folder Include="Views\CAD\" />
   </ItemGroup>
