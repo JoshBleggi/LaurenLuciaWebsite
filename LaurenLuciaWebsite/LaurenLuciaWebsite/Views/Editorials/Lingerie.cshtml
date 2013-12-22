@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Editorials - Lingerie";
+}
+
+@section featured{
+    <body class="classic">
+        <link rel="stylesheet" type="text/css" href="../../Scripts/Slideshow/Bespoke/themes.css" />
+        <link rel="stylesheet" type="text/css" href="../../Scripts/Slideshow/Bespoke/style.css" />
+        <script type="text/javascript" src="../../Scripts/jquery.rule.js"></script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $("#navBar").css("height", $("html").height());
+
+                var gWidth = $("#main").width() - parseInt($("#gallery").css("marginLeft"));
+                $("#gallery").css("width", gWidth);
+
+                adjustCss();
+                adjustNav();
+            });
+
+            $(window).resize(function () {
+                $("#navBar").css("height", $("html").height());
+
+                adjustCss();
+                adjustNav();
+            });
+        </script>
+        <div id="main" style=" width:100%; height:100%;z-index:-1;position:absolute;">
+            <header>
+                <div class="bespoke-directionNav"><a id="prevNav" class="bespoke-prevNav"></a><a id="nextNav" class="bespoke-nextNav"></a></div>
+            </header>
+            <article id="gallery" style="margin-left: 264px;">
+                <section style="left: 7.5%"><img src="../../Content/Images/LaurenImages/Slideshow/Slide0.jpg" /></section>
+                <section style="left: 7.5%"><img id="firstImg" src="../../Content/Images/LaurenImages/Slideshow/Editorials/Lingerie/Slide1.jpg" /></section>
+                <section style="left: 7.5%"><img src="../../Content/Images/LaurenImages/Slideshow/Editorials/Lingerie/Slide2.jpg" /></section>
+                <section style="left: 7.5%"><img src="../../Content/Images/LaurenImages/Slideshow/Editorials/Lingerie/Slide3.jpg" /></section>
+                <section style="left: 7.5%"><img src="../../Content/Images/LaurenImages/Slideshow/Editorials/Lingerie/Slide4.jpg" /></section>
+                <section style="left: 7.5%"><img src="../../Content/Images/LaurenImages/Slideshow/Editorials/Lingerie/Slide5.jpg" /></section>
+                <section style="left: 7.5%"><img src="../../Content/Images/LaurenImages/Slideshow/Slide0.jpg" /></section>
+            </article>
+        </div>
+        <script src="../../Scripts/Slideshow/Bespoke/src/bespoke.js"></script>
+        <script src="../../Scripts/Slideshow/Bespoke/src/actual.js"></script>
+    </body>
+}
+
+

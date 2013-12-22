@@ -183,6 +183,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\CADController.cs" />
     <Compile Include="Controllers\CollectionsController.cs" />
+    <Compile Include="Controllers\EditorialsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RunwayController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -206,6 +207,7 @@
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Runway.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Shared\Autumn Winter 2014.png" />
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Shared\Past Work.png" />
+    <Content Include="Content\Images\LaurenImages\Nav\Unselected\Resort.png" />
     <Content Include="Content\Images\LaurenImages\Nav\White Logo Transparent.png" />
     <Content Include="Content\Images\LaurenImages\AboutPhoto.JPG" />
     <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide1.jpg" />
@@ -282,6 +284,23 @@
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide2.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide3.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Dashboard\slide4.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\aw2014\Slide1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\aw2014\Slide2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\aw2014\Slide3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\aw2014\Slide4.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\aw2014\Slide5.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\aw2014\Slide6.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\aw2014\Slide7.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\aw2014\Slide8.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\aw2014\Slide9.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\Lingerie\Slide1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\Lingerie\Slide2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\Lingerie\Slide3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\Lingerie\Slide4.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\Lingerie\Slide5.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\Resort\Slide1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\Resort\Slide2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\Editorials\Resort\Slide3.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Slide0.jpg" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -455,8 +474,7 @@
     <Content Include="Views\Collections\aw2014.cshtml" />
     <Content Include="Views\Collections\Lingerie.cshtml" />
     <Content Include="Views\Collections\pastWork.cshtml" />
-    <Content Include="Views\Editorials\aw2014.cshtml" />
-    <Content Include="Views\Editorials\pastWork.cshtml" />
+    <Content Include="Views\Editorials\Resort.cshtml" />
     <Content Include="Views\Runway\aw2014.cshtml" />
     <Content Include="Views\Runway\pastWork.cshtml" />
     <Content Include="Scripts\Slideshow\Bespoke\.bower.json" />
@@ -466,6 +484,8 @@
     <Content Include="Scripts\Slideshow\Bespoke\package.json" />
     <Content Include="Scripts\Slideshow\Bespoke\README.md" />
     <Content Include="Views\CAD\aw2014.cshtml" />
+    <Content Include="Views\Editorials\Lingerie.cshtml" />
+    <Content Include="Views\Editorials\aw2014.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
