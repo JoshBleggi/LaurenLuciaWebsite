@@ -1,5 +1,31 @@
 ﻿@{
-    ViewBag.Title = "aw2014";
+    ViewBag.Title = "Runway - Autumn/Winter 2014";
 }
 
-<h2>aw2014</h2>
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+@section featured{
+    <section id="contentSection" class="contact">
+        <script type="text/javascript">
+            $(window).load(function () {
+                $("#navBar").css("height", $("html").height())
+            });
+        </script>
+        <div>
+            <table style="width:100%">
+                <tr style="height:150px"></tr>
+                <tr>
+                    <td style="width:4%"></td>
+                    <td style="text-align:center">
+                        <iframe width="853" height="480" src="//www.youtube.com/embed/S4QtSinA6EQ" frameborder="0" allowfullscreen></iframe>
+                    </td>
+                    <td style="width:2%"></td>
+                </tr>
+                <tr></tr>
+            </table>
+        </div>
+    </section>
+}
