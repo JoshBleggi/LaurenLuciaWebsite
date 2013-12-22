@@ -11,9 +11,14 @@
 <section id="contentSection" class="contact">
     <script type="text/javascript">
         $(window).load(function () {
-            $("#navBar").css("height", $("html").height())
+            $("#navBar").css("height", $("html").height());
+        });
+
+        $(window).resize(function () {
+            $("#navBar").css("height", $("html").height());
         });
     </script>
+
     <div>
         <table>
             <tr style="height:150px"></tr>

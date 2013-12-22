@@ -2,4 +2,44 @@
     ViewBag.Title = "News";
 }
 
-<h2>News</h2>
+@section featured{
+    <section id="contentSection" class="contact">
+        <script type="text/javascript">
+            $(window).load(function () {
+                $("#navBar").css("height", $("#contentSection").height())
+            });
+
+            $(window).resize(function () {
+                $("#navBar").css("height", $("#contentSection").height())
+            });
+        </script>
+        <div>
+            <table style="width:100%">
+                <tr style="height: 150px;"></tr>
+                <tr>
+                    <td style="width:4%"></td>
+                    <td style="text-align: center;">
+                        <iframe width="853" height="480" src="//www.youtube.com/embed/MPC7uD1WZyA" frameborder="0" allowfullscreen></iframe>
+                    </td>
+                    <td style="width:4%"></td>
+                </tr>
+                <tr style="height:25px">
+                    <td style="width:4%"></td>
+                    <td style="text-align: center; border-bottom: 1px solid #333333;">
+                    </td>
+                    <td style="width:4%"></td>
+                </tr>
+                <tr style="height:25px">
+                </tr>
+                <tr>
+                    <td style="width:4%"></td>
+                    <td style="text-align:center">
+                        <iframe width="853" height="480" src="//www.youtube.com/embed/3no60xZliY0" frameborder="0" allowfullscreen></iframe>
+                    </td>
+                    <td style="width:2%"></td>
+                </tr>
+                <tr style="border-bottom:1px solid white"></tr>
+            </table>
+        </div>
+    </section>
+}

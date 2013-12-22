@@ -24,6 +24,11 @@ namespace LaurenLuciaWebsite.Controllers
             return View();
         }
 
+        public ActionResult News()
+        {
+            return View();
+        }
+
         public List<String> GetNavImagePaths()
         {
             var content = "~\\Content\\Images\\LaurenImages\\Nav\\Unselected\\";

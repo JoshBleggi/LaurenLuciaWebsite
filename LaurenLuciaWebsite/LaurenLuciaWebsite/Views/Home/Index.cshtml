@@ -17,6 +17,10 @@
                     $('#slider').nivoSlider();
                     $("#navBar").css("height", $("#contentSection").height())
                 });
+
+                $(window).resize(function () {
+                    $("#navBar").css("height", $("#contentSection").height())
+                });
             </script>
             <div id="wrapper" >
                 <div class="theme-default">

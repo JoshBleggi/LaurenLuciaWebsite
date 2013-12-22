@@ -8,10 +8,14 @@
 </hgroup>
 
 @section featured{
-    <section id="contentSection" class="contact">
+    <section id="contentSection" class="featured">
         <script type="text/javascript">
             $(window).load(function () {
-                $("#navBar").css("height", $("html").height())
+                $("#navBar").css("height", $("html").height());
+            });
+
+            $(window).resize(function () {
+                $("#navBar").css("height", $("html").height());
             });
         </script>
         <div>
