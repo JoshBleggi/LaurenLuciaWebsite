@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "CAD - Autumn/Winter 2014";
+}
+
+@section featured{
+<body class="classic">
+    <link rel="stylesheet" type="text/css" href="../../Scripts/Slideshow/Bespoke/themes.css" />
+    <link rel="stylesheet" type="text/css" href="../../Scripts/Slideshow/Bespoke/style.css" />
+    <script type="text/javascript" src="../../Scripts/jquery.rule.js"></script>
+    
+    <div id="main" style=" width:100%; height:100%;z-index:-1;position:absolute;">
+        <header>
+            <div class="bespoke-directionNav"><a id="prevNav" class="bespoke-prevNav" onclick="adjust()"></a><a id="nextNav" class="bespoke-nextNav"></a></div>
+        </header>
+        <article id="gallery" style="margin-left: 264px;" >
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/Slide0.jpg" /></section>
+            <section style="left:15%"><img id="firstImg" src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide1.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide2.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide3.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide4.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide5.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide6.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide7.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide8.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide9.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide10.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide11.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide12.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide13.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide14.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide15.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide16.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide17.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide18.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide19.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide20.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide21.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide22.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide23.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide24.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide25.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide26.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/CAD/aw2014/Slide27.jpg" /></section>
+            <section style="left:15%"><img src="../../Content/Images/LaurenImages/Slideshow/Slide0.jpg" /></section>
+        </article>
+    </div>
+    <script src="../../Scripts/Slideshow/Bespoke/src/bespoke.js"></script>
+    <script src="../../Scripts/Slideshow/Bespoke/src/actual.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $("#navBar").css("height", $("html").height());
+
+            var gWidth = $("#main").width() - parseInt($("#gallery").css("marginLeft"));
+            $("#gallery").css("width", gWidth);
+
+            adjust();
+        });
+
+        $(window).resize(function () {
+            $("#navBar").css("height", $("html").height());
+
+            adjust();
+        });
+        
+        function adjust() {
+            adjustCss();
+            adjustNav();
+        }
+    </script>
+</body>
+}

@@ -410,10 +410,42 @@ aside {
 .Runway:hover + .RunwaySub{
     display: block;
     border-bottom: 1px solid #333333;
-    -moz-animation: 2s ease;
+    -webkit-transition:     .8s ease;
+    -moz-transition:        .8s ease;
+    -o-transition:          .8s ease;
+    -ms-transition:         .8s ease;
+    transition:             .8s ease;
 }
 
 .RunwaySub:hover{
+    display: block;
+    border-bottom: 1px solid #333333;
+    -webkit-transition:     .8s ease;
+    -moz-transition:        .8s ease;
+    -o-transition:          .8s ease;
+    -ms-transition:         .8s ease;
+    transition:             .8s ease;
+}
+
+.CadSub{
+    display:none;
+}
+
+.CadSub a{
+    margin-left:25%;
+}
+
+.Cad{
+    border-bottom: 1px solid #333333;
+}
+
+.Cad:hover + .CadSub{
+    display: block;
+    border-bottom: 1px solid #333333;
+    -moz-animation: 2s ease;
+}
+
+.CadSub:hover{
     display: block;
     border-bottom: 1px solid #333333;
 }

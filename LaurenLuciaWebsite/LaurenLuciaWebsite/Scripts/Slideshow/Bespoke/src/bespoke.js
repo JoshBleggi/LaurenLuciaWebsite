@@ -36,12 +36,22 @@
 					fire('slide', createEventData(slides[index], customData)) && activate(index, customData);
 				},
 
-				step = function(offset, customData) {
-					var slideIndex = slides.indexOf(activeSlide) + offset;
+				step = function (offset, customData) {
+				    var slideIndex = slides.indexOf(activeSlide) + offset;
+				    var prevSlideIndex = slides.indexOf(activeSlide) - offset;
+				    var nextSlideIndex = slideIndex + offset;
 
-					if (slideIndex > 0 && slideIndex < slides.length - 1) {
-					    fire(offset > 0 ? 'next' : 'prev', createEventData(activeSlide, customData)) && activate(slideIndex, customData);
-					}
+				        if (slideIndex > 0 && slideIndex < slides.length - 1) {
+				            if (activeSlide.clientWidth != slides[prevSlideIndex].clientWidth || activeSlide.clientWidth != slides[nextSlideIndex].clientWidth) {
+				                adjustNav();
+				            }
+
+				            fire(offset > 0 ? 'next' : 'prev', createEventData(activeSlide, customData)) && activate(slideIndex, customData);
+
+				            if (activeSlide.clientWidth != slides[prevSlideIndex].clientWidth || activeSlide.clientWidth != slides[nextSlideIndex].clientWidth) {
+				                adjustCss();
+				            }
+				        }
 				},
 
 				on = function(eventName, callback) {
@@ -179,3 +189,68 @@
 	};
 
 }('bespoke', window));
+
+
+
+        function adjustCss() {
+            var activeSlideWidth = parseInt($(".bespoke-active").children().width());
+            var before1SlideWidth = parseInt($(".bespoke-before-1").children().width());
+            var before2SlideWidth = parseInt($(".bespoke-before-1").children().width());
+            var beforeSlideWidth = parseInt($(".bespoke-before").last().children().width());
+            var after1SlideWidth = parseInt($(".bespoke-after-1").children().width());
+            var after2SlideWidth = parseInt($(".bespoke-after-2").children().width());
+
+            $.rule('.classic section.bespoke-before', 'link').remove();
+            $.rule('.classic section.bespoke-before-2', 'link').remove();
+            $.rule('.classic section.bespoke-before-1', 'link').remove();
+            $.rule('.classic section.bespoke-after', 'link').remove();
+            $.rule('.classic section.bespoke-after-2', 'link').remove();
+            $.rule('.classic section.bespoke-after-1', 'link').remove();
+
+            $.rule('.classic section.bespoke-before{}').appendTo('link')
+            .css("-webkit-transform", "translate3d(" + ((before1SlideWidth + before2SlideWidth + beforeSlideWidth) * -1).toString() + "px, 0, 0)")
+            .css("-moz-transform", "translate3d(" + ((before1SlideWidth + before2SlideWidth + beforeSlideWidth) * -1).toString() + "px, 0, 0)")
+            .css("-ms-transform", "translate3d(" + ((before1SlideWidth + before2SlideWidth + beforeSlideWidth) * -1).toString() + "px, 0, 0)")
+            .css("-o-transform", "translate3d(" + ((before1SlideWidth + before2SlideWidth + beforeSlideWidth) * -1).toString() + "px, 0, 0)")
+            .css("transform", "translate3d(" + ((before1SlideWidth + before2SlideWidth + beforeSlideWidth) * -1).toString() + "px, 0, 0)");
+            $.rule('.classic section.bespoke-before-2{}').appendTo('link')
+            .css("-webkit-transform", "translate3d(" + ((before1SlideWidth + before2SlideWidth) * -1).toString() + "px, 0, 0)")
+            .css("-moz-transform", "translate3d(" + ((before1SlideWidth + before2SlideWidth) * -1).toString() + "px, 0, 0)")
+            .css("-ms-transform", "translate3d(" + ((before1SlideWidth + before2SlideWidth) * -1).toString() + "px, 0, 0)")
+            .css("-o-transform", "translate3d(" + ((before1SlideWidth + before2SlideWidth) * -1).toString() + "px, 0, 0)")
+            .css("transform", "translate3d(" + ((before1SlideWidth + before2SlideWidth) * -1).toString() + "px, 0, 0)")
+            .css("opacity", "0.3");
+            $.rule('.classic section.bespoke-before-1{}').appendTo('link')
+            .css("-webkit-transform", "translate3d(" + (before1SlideWidth * -1).toString() + "px, 0, 0)")
+            .css("-moz-transform", "translate3d(" + (before1SlideWidth * -1).toString() + "px, 0, 0)")
+            .css("-ms-transform", "translate3d(" + (before1SlideWidth * -1).toString() + "px, 0, 0)")
+            .css("-o-transform", "translate3d(" + (before1SlideWidth * -1).toString() + "px, 0, 0)")
+            .css("transform", "translate3d(" + (before1SlideWidth * -1).toString() + "px, 0, 0)")
+            .css("opacity", "0.3");
+            $.rule('.classic section.bespoke-after{}').appendTo('link')
+            .css("-webkit-transform", "translate3d(" + (activeSlideWidth + after1SlideWidth + after2SlideWidth).toString() + "px, 0, 0)")
+            .css("-moz-transform", "translate3d(" + (activeSlideWidth + after1SlideWidth + after2SlideWidth).toString() + "px, 0, 0)")
+            .css("-ms-transform", "translate3d(" + (activeSlideWidth + after1SlideWidth + after2SlideWidth).toString() + "px, 0, 0)")
+            .css("-o-transform", "translate3d(" + (activeSlideWidth + after1SlideWidth + after2SlideWidth).toString() + "px, 0, 0)")
+            .css("transform", "translate3d(" + (activeSlideWidth + after1SlideWidth + after2SlideWidth).toString() + "px, 0, 0)");
+            $.rule('.classic section.bespoke-after-2{}').appendTo('link')
+            .css("-webkit-transform", "translate3d(" + (activeSlideWidth + after1SlideWidth).toString() + "px, 0, 0)")
+            .css("-moz-transform", "translate3d(" + (activeSlideWidth + after1SlideWidth).toString() + "px, 0, 0)")
+            .css("-ms-transform", "translate3d(" + (activeSlideWidth + after1SlideWidth).toString() + "px, 0, 0)")
+            .css("-o-transform", "translate3d(" + (activeSlideWidth + after1SlideWidth).toString() + "px, 0, 0)")
+            .css("transform", "translate3d(" + (activeSlideWidth + after1SlideWidth).toString() + "px, 0, 0)")
+            .css("opacity", "0.3");
+            $.rule('.classic section.bespoke-after-1{}').appendTo('link')
+            .css("-webkit-transform", "translate3d(" + (activeSlideWidth).toString() + "px, 0, 0)")
+            .css("-moz-transform", "translate3d(" + (activeSlideWidth).toString() + "px, 0, 0)")
+            .css("-ms-transform", "translate3d(" + (activeSlideWidth).toString() + "px, 0, 0)")
+            .css("-o-transform", "translate3d(" + (activeSlideWidth).toString() + "px, 0, 0)")
+            .css("transform", "translate3d(" + (activeSlideWidth).toString() + "px, 0, 0)")
+            .css("opacity", "0.3");
+        }
+
+        function adjustNav() {
+            var activeSlideRect = document.getElementsByClassName("bespoke-active").item(0).getBoundingClientRect();
+            $("#prevNav").css("left", (activeSlideRect.left + (parseInt($("#firstImg").css("width")) * 1 / 15)).toString() + "px")
+            $("#nextNav").css("left", (activeSlideRect.left + (parseInt($("#firstImg").css("width")) * 14 / 15) - $("#nextNav").width()).toString() + "px")
+        }

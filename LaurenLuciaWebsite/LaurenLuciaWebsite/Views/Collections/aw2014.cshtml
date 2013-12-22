@@ -24,61 +24,6 @@
             adjustCss();
             adjustNav();
         });
-
-        function adjustCss() {
-            $.rule('.classic section.bespoke-before', 'link').remove();
-            $.rule('.classic section.bespoke-before-2', 'link').remove();
-            $.rule('.classic section.bespoke-before-1', 'link').remove();
-            $.rule('.classic section.bespoke-after', 'link').remove();
-            $.rule('.classic section.bespoke-after-2', 'link').remove();
-            $.rule('.classic section.bespoke-after-1', 'link').remove();
-            $.rule('.classic section.bespoke-before{}').appendTo('link')
-            .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -3).toString() + "px, 0, 0)")
-            .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -3).toString() + "px, 0, 0)")
-            .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -3).toString() + "px, 0, 0)")
-            .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -3).toString() + "px, 0, 0)")
-            .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -3).toString() + "px, 0, 0)");
-            $.rule('.classic section.bespoke-before-2{}').appendTo('link')
-            .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -2).toString() + "px, 0, 0)")
-            .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -2).toString() + "px, 0, 0)")
-            .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -2).toString() + "px, 0, 0)")
-            .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -2).toString() + "px, 0, 0)")
-            .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -2).toString() + "px, 0, 0)")
-            .css("opacity", "0.3");
-            $.rule('.classic section.bespoke-before-1{}').appendTo('link')
-            .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -1).toString() + "px, 0, 0)")
-            .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -1).toString() + "px, 0, 0)")
-            .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -1).toString() + "px, 0, 0)")
-            .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -1).toString() + "px, 0, 0)")
-            .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * -1).toString() + "px, 0, 0)")
-            .css("opacity", "0.3");
-            $.rule('.classic section.bespoke-after{}').appendTo('link')
-            .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 3).toString() + "px, 0, 0)")
-            .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 3).toString() + "px, 0, 0)")
-            .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 3).toString() + "px, 0, 0)")
-            .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 3).toString() + "px, 0, 0)")
-            .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 3).toString() + "px, 0, 0)");
-            $.rule('.classic section.bespoke-after-2{}').appendTo('link')
-            .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 2).toString() + "px, 0, 0)")
-            .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 2).toString() + "px, 0, 0)")
-            .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 2).toString() + "px, 0, 0)")
-            .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 2).toString() + "px, 0, 0)")
-            .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width")) * 2).toString() + "px, 0, 0)")
-            .css("opacity", "0.3");
-            $.rule('.classic section.bespoke-after-1{}').appendTo('link')
-            .css("-webkit-transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)")
-            .css("-moz-transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)")
-            .css("-ms-transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)")
-            .css("-o-transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)")
-            .css("transform", "translate3d(" + (parseInt($("#firstImg").css("width"))).toString() + "px, 0, 0)")
-            .css("opacity", "0.3");
-        }
-
-        function adjustNav() {
-            var activeSlideRect = document.getElementsByClassName("bespoke-active").item(0).getBoundingClientRect();
-            $("#prevNav").css("left", (activeSlideRect.left + (parseInt($("#firstImg").css("width")) * 1 / 15)).toString() + "px")
-            $("#nextNav").css("left", (activeSlideRect.left + (parseInt($("#firstImg").css("width")) * 14 / 15) - $("#nextNav").width()).toString() + "px")
-        }
     </script>
     <div id="main" style=" width:100%; height:100%;z-index:-1;position:absolute;">
         <header>

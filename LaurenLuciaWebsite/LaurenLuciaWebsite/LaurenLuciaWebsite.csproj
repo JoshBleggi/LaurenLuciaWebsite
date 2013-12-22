@@ -181,6 +181,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CADController.cs" />
     <Compile Include="Controllers\CollectionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -206,6 +207,33 @@
     <Content Include="Content\Images\LaurenImages\Nav\Unselected\Shared\Past Work.png" />
     <Content Include="Content\Images\LaurenImages\Nav\White Logo Transparent.png" />
     <Content Include="Content\Images\LaurenImages\AboutPhoto.JPG" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide1.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide10.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\slide11.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\slide12.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\slide13.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\slide14.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\slide15.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\slide16.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\slide17.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\slide18.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\slide19.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide2.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide20.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide21.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide22.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide23.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide24.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide25.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide26.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide27.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide3.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide4.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide5.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide6.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide7.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide8.jpg" />
+    <Content Include="Content\Images\LaurenImages\Slideshow\CAD\aw2014\Slide9.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Slide1.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Slide10.jpg" />
     <Content Include="Content\Images\LaurenImages\Slideshow\Collections\aw2014\Viscous Catalogue\Slide11.jpg" />
@@ -436,12 +464,12 @@
     <Content Include="Scripts\Slideshow\Bespoke\LICENSE-MIT" />
     <Content Include="Scripts\Slideshow\Bespoke\package.json" />
     <Content Include="Scripts\Slideshow\Bespoke\README.md" />
+    <Content Include="Views\CAD\aw2014.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Images\LaurenImages\Nav\Unselected\Editorials\" />
     <Folder Include="Content\Images\LaurenImages\Slideshow\Products\" />
-    <Folder Include="Views\CAD\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
